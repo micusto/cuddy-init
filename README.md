@@ -2,7 +2,7 @@
 
 *cuddy-init* is a light-weight "keep-container-alive" binary. Besides that, you can use *cuddy-init* to configure your container, either at startup or as a recurring task. You can also get feedback if the recurring task fails.
 
-As the options might reveal it's a fellow companion with [*cuddy-client*](https://github.com/urlund/cuddy-client) (it's default, but not required).
+As the options might reveal it's a fellow companion with [*cuddy-client*](https://github.com/micusto/cuddy-client) (it's default, but not required).
 
 ### Usage:
 
@@ -52,11 +52,11 @@ RUN apt-get update \
 # https://github.com/krallin/tini/blob/master/README.md
 ADD https://github.com/krallin/tini/releases/download/v0.16.1/tini /usr/local/sbin/tini
 
-# https://github.com/urlund/cuddy-init/blob/master/README.md
-ADD https://github.com/urlund/cuddy-init/releases/download/v1.0.0/cuddy-init-linux-amd64 /usr/local/sbin/cuddy-init
+# https://github.com/micusto/cuddy-init/blob/master/README.md
+ADD https://github.com/micusto/cuddy-init/releases/download/v1.0.0/cuddy-init-linux-amd64 /usr/local/sbin/cuddy-init
 
-# https://github.com/urlund/cuddy-client/blob/master/README.md
-ADD https://github.com/urlund/cuddy-client/releases/download/v1.0.0/cuddy-client-linux-amd64 /usr/local/sbin/cuddy-client
+# https://github.com/micusto/cuddy-client/blob/master/README.md
+ADD https://github.com/micusto/cuddy-client/releases/download/v1.0.0/cuddy-client-linux-amd64 /usr/local/sbin/cuddy-client
 
 # ensure binaries are executable - and make cuddy dir
 RUN chmod +x /usr/local/sbin/tini \
