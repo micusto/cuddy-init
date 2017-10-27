@@ -43,7 +43,7 @@ This is a *quickstart* Dockerfile, modify it to your needs.
 ```
 FROM debian:latest
 
-MAINTAINER Henrik Urlund <henrik@cuddy.io>
+MAINTAINER Henrik Urlund <henrik@urlund.com>
 
 # install top/ps command
 RUN apt-get update \
